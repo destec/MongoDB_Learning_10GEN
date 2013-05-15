@@ -24,7 +24,7 @@ public class AllThreeInOne {
 		conf.setClassForTemplateLoading(AllThreeInOne.class, "/");
 
 		MongoClient client = new MongoClient(new ServerAddress(
-				"192.168.181.150", 27017));
+				"localhost", 27017));
 		DB database = client.getDB("test");
 		final DBCollection collection = database.getCollection("test");
 		
